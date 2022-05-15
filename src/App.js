@@ -174,14 +174,18 @@
 
 
 
-import React, {Component} from "react";
-import State from "./VD3State/State";
-
-
+import React from "react";
+import Vidu3 from "./Form/VD3/ViDu3";
+//import State from "./VD3State/State";
+//import Vidu1 from "./Form/VD1/Vidu1";
+import ViDu3 from "./Form/VD3/ViDu3";
 function App() {
+    // eslint-disable-next-line
     return (
         <div>
            {/* <State></State> */}
+           {/* <><Vidu1></Vidu1></> */}
+           <Vidu3></Vidu3>
            
         </div>     
     )};

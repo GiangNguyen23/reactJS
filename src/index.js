@@ -4,13 +4,20 @@ import './index.css';
 import App from './App';
 
 import reportWebVitals from './reportWebVitals';
-import Car from './VD4State';
-
+//import Car from './VD4State';
+//import VD2State from './VD2State';
+//import Output from './VD2State/Output';
+//import Vd from './VD2State/Product';
+//import vd1 from './Form/vd1';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App/> */}
-    <Car></Car>
+    <App/>
+    {/* <Car></Car> */}
+    {/* <VD2State></VD2State> */}
+    {/* <Vd></Vd> */}
+    {/* <Output></Output> */}
+   
   </React.StrictMode>
 );
 
