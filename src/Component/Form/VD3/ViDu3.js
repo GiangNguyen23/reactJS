@@ -3,14 +3,15 @@ class ViDu3 extends Component {
     constructor(props){
         super(props);
         this.state={
-            data:'Initial data...'
+            data:'Alo'
         }
-        this.updateState=this.updateState.blind(this);
+        this.updateState=this.updateState.bind(this);
     };
     updateState(e)
-{
-    this.setState({data: e.tartget.value});
-}    render() {
+        {
+            this.setState({data: e.target.value});
+        }    
+    render() {
         return (
             <div>
                 <Content myDataProp={this.state.data}

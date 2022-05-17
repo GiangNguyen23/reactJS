@@ -1,23 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import Menu from './Component/Form/MenuDrink/Menu';
 
+import './index.css';
 import reportWebVitals from './reportWebVitals';
-//import Car from './VD4State';
-//import VD2State from './VD2State';
-//import Output from './VD2State/Output';
-//import Vd from './VD2State/Product';
-//import vd1 from './Form/vd1';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
-    {/* <Car></Car> */}
-    {/* <VD2State></VD2State> */}
-    {/* <Vd></Vd> */}
-    {/* <Output></Output> */}
-   
+  <><Menu></Menu></>
+  
   </React.StrictMode>
 );
 

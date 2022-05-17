@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import Item from './Item/Item';
-import products_data from "../../../data";
+import products_data from "../../../../data";
 class RightContent extends Component {
     render() {
         var rows=[];
