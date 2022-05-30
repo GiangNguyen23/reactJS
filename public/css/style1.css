@@ -1,0 +1,38 @@
+.image-news{
+    width: 100px;
+    height: 100px;
+}
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+ 
+}
+h1{
+    color:rgb(229, 11, 11);
+}
+.h1h{
+    text-align: center;
+}
+ul{
+    display: flex;
+   
+   
+}
+.col-4{
+    padding-right: 100px;
+    width: 400px;
+}
+li{
+    list-style: none;
+}
+.edti{
+    width: 50px;
+    color: blue;
+}
+.delete{
+    color: brown;
+    width: 50px;
+   
+}
+

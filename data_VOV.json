@@ -1,0 +1,77 @@
+{
+  "thegioi": [
+    {
+      "id": 1,
+      "image": "./images/a.jpg",
+      "title": "Ai Cập tuyên bố tiêu diệt 10 tên khủng bố ",
+      "type": "Lớn"
+    },
+    {
+      "id": 2,
+      "image": "./images/b.jpg",
+      "title": "Tổng thống Ukraine lần đầu rời Kiev đến chiến tuyến Kharkov",
+      "type": "Nhỏ"
+    },
+    {
+      "id": 3,
+      "image": "./images/c.jpg",
+      "title": "Nhật Bản xác nhận tập trận không quân với Mỹ",
+      "type": "Nhỏ"
+    },
+    {
+      "id": 4,
+      "image": "./images/hinh5.jpg",
+      "title": "Học giả Nga đánh giá cao vai trò và vị thế của ASEAN và Việt Nam  ",
+      "type": "Nhỏ"
+    },
+    {
+      "id": 5,
+      "image": "./images/i.jpg",
+      "title": "Serbia phớt lờ lệnh trừng phạt của EU, đạt thỏa thuận khí đốt với Nga",
+      "type": "Nhỏ"
+    },
+    {
+      "title": "Ngoại trưởng Nga bác tin đồn về tình trạng sức khỏe của Tổng thống Putin",
+      "image": "./images/g.jpg",
+      "id": 8
+    },
+    {
+      "title": "Ngoại trưởng Lavrov tiết lộ “ưu tiên vô điều kiện” của Nga ở Donbass",
+      "image": "./images/a.jpg",
+      "id": 9
+    }
+  ],
+  "taichinh_kinhdoanh": [
+    {
+      "id": 10,
+      "image": "./images/vta.png",
+      "title": "VietinBank tiếp tục giảm phí chuyển khoản liên ngân hàng 24/7",
+      "type": "Lớn"
+    },
+    {
+      "id": 11,
+      "image": "./images/vtb.jpg",
+      "title": "VietinBank đồng hành cùng doanh nghiệp với nhiều gói tín dụng ưu đãi",
+      "type": "Nhỏ"
+    },
+    {
+      "id": 12,
+      "image": "./images/vtc.jpg",
+      "title": "Vui hè cùng Sacombank eBanking",
+      "type": "Nhỏ"
+    },
+    {
+      "id": 13,
+      "image": "./images/vtd.jpg",
+      "title": "Chỉ 20% người dân Việt Nam có tài khoản thẻ ngân hàng",
+      "type": "Nhỏ"
+    }
+  ],
+  "ad": [
+    {
+      "id": 14,
+      "image": "./images/poster01.jpg",
+      "type": "vua"
+    }
+  ]
+}

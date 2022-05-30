@@ -5,11 +5,9 @@ class Menu extends Component {
         super(props);
         this.state={
             nameDrink: " ",
-            quantity: 0,
             price: 0,
-            money_KT: 0,
             total: 0,
-            ex_money: 0
+
         }
         this.handleChange= this.handleChange.bind(this); //tránh binding trong render là bind trong hàm tạo constructor
         this.handleSubmit= this.handleSubmit.bind(this);
@@ -18,19 +16,37 @@ class Menu extends Component {
         let key = event.target.name;
         let val = event.target.value;
 
-        this.setState({[key]:val});
-        this.setState = ((state) => ({
-            total: (state.price * state.quantity),
-            ex_money: (state.total - state.money_KT)
-        }));
-        // this.setState =((state) => ({
-        //     ex_money: (state.total - state.money_KT)
-        // }));    
-       
+        if(key==="nameDrink"){
+            if(val==="Cà phê sữa"){
+              this.setState({price: 12000})
+            }
+            else if (val === "Cà phê đá"){
+              this.setState({price: 10000})
+            }
+            else if (val ==="Sting dâu"){
+              this.setState({price: 8000})
+            }
+            else if (val ==="Trà đá"){
+              this.setState({price: 2000})
+            }
+          }  
+          this.setState({[key]:val});
     }
+
+    CheckOrder = () =>{
+        if(this.state.total === 0 || this.state.total < this.state.price){
+          alert("Vui lòng thanh toán. Cảm ơn bạn!");
+        }
+        else if(this.state.nameDrink === ""){
+          alert("Vui lòng chọn thức uống bạn thích! Chúc bạn ngon miệng!");
+        }
+        else alert("Lựa chọn của bạn "+ this.state.nameDrink + ". Mời nhận tiền thừa là "+ ((this.state.total)-(this.state.price)) )
+      }
+
     handleSubmit = (event) => {
         event.preventDefault();
-        alert("Mời nhận tiền dư là: "+ this.state.ex_money);
+        this.checkMoney();
+
     }
     render() {
         return (
@@ -40,48 +56,23 @@ class Menu extends Component {
                         <tr>
                             <td colSpan={2} align ="center">MENU</td>   
                         </tr>
-                        <tr><td colSpan={2} align ="center">Cafe sữa     ............................. 12.000đ</td></tr>
-                        <tr><td colSpan={2} align ="center">Cafe đá      ............................. 10.000đ</td></tr>
+                        <tr><td colSpan={2} align ="center">Cà phê sữa     ............................. 12.000đ</td></tr>
+                        <tr><td colSpan={2} align ="center">Cà phê đá      ............................. 10.000đ</td></tr>
                         <tr><td colSpan={2} align ="center">String dâu   ............................. 8.000đ</td></tr>
                         <tr><td colSpan={2} align ="center">Trà đá       ............................. 2.000đ</td></tr>
                         <tr>
                             <td>Tên thức uống:</td>
                             <td>
-                                <select name="name_Drink" className="typeWater" >
-                                    <option value={this.state.value} onChange={this.handleChange}>Chọn nước bạn thích!</option>
-                                    <option value={12000}>Cà phê sữa </option>
-                                    <option value={10000}>Cà phê đá </option>
-                                    <option value={8000}>String dâu</option>
-                                    <option value={2000}>Trà đá </option>
+                                <select name="drink" onChange={this.handleChange} value = "">
+                                    <option selected hidden>Mời chọn</option>
+                                    <option value="Cà phê sữa">Cà phê sữa</option>
+                                    <option value="Cà phê đá">Cà phê đá</option>
+                                    <option value="String dâu">String dâu</option>
+                                    <option value="Trà đá">Trà đá</option>
                                 </select>
                             </td>
                         </tr>
-                        <br></br>
-                        <tr>
-                            <td>Số lượng:</td>
-                            <td><input 
-                                type="number" 
-                                name="quantity" 
-                                className="form-control"
-                                defaultValue={0}
-                                required
-                                onChange={this.handleChange}  
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Tiền khách trả:</td>
-                            <td><input 
-                                type="number" 
-                                name="tien_KT" 
-                                className="form-control"
-                                // max={10000000}
-                                // defaultValue={0}
-                                required
-                                // onChange={this.handleChange}  
-                                />
-                            </td>
-                        </tr>
+                        <br></br> 
                         <tr>
                             <td>Tổng tiền:</td>
                             <td><input 
@@ -94,7 +85,7 @@ class Menu extends Component {
                                 />
                             </td>
                         </tr>
-                        {/* <tr>
+                        <tr>
                             <td>Tiền dư:</td>
                             <td><input 
                                 type="number"   
@@ -102,10 +93,10 @@ class Menu extends Component {
                                 className="form-control"
                                 defaultValue={0}
                                 readOnly
-                                value={this.state.ex_money}
+                                value = {((this.state.total)-(this.state.price))}
                                 />
                             </td>
-                        </tr> */}
+                        </tr>
                         <tr>
                             <td colSpan={2}><input type="submit" name="Submit" value="Tính tiền" /></td>
                         </tr>

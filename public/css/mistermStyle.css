@@ -1,0 +1,23 @@
+
+.content{   
+    display: grid;
+    grid-template-columns: 1.8fr 1.5fr;
+    padding-left:5%;
+    padding-right:5%;
+
+}
+.content .right{
+    padding-left: 55%;
+}
+
+.col, .col1 p{
+    font-weight: bold;
+    padding-left: 5%;
+}
+.col1 {
+    width:460px;
+    display:flex;
+    float:left;
+    padding-bottom: 15%;
+    padding-left: -15%;
+}

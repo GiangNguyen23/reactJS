@@ -1,3 +1,4 @@
+
 // import Header from './Component/header/header';
 // import Content from './Component/content/content';
 // import Footer from './Component/footer/footer';
@@ -174,15 +175,64 @@
 
 
 
-import React from "react";
+// import React, {Component} from "react";
+// import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+// import routes from "./Router/Vidu1/routes";
 
-function App() {
-    // eslint-disable-next-line
-    return (
-        <div>
-          
-        </div>     
-    )};
+// class App extends Component {
+//     render() {
+//         return (
+//             <Router>
+//                 <div>
+//                     <h2>Welcome to React Router</h2>
+//                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+//                         <ul className=" navbar-vav mr-auto">
+//                           <ul></ul>
+//                           <ul></ul>
+//                           <ul></ul>
 
-export default App;
+//                         </ul>
+//                     </nav>
+//                     <hr />
+//                     <Switch>
+//                         {this.showContentAbout(routes)}
+//                     </Switch>
+//                 </div>
+//                 {/* <div>
+//                     <h2>Welcome to React Router Tutorial</h2>
+//                     <nav className="navbar navbar-expand-lg nav-light bg-light">
+//                         <ul className="navbar-nav mr-auto">
+//                             <li><Link to={'/'} className="nav-link">Home</Link></li>
+//                             <li><Link to={'/contact'} className="nav-link">About</Link></li>
+//                             <li><Link to={'/about'} className="nav-link">Contact</Link></li>
+//                         </ul>
+//                     </nav>
+//                     <hr/>
+//                     <Switch>
+//                         <Route exact path='/' component={Home}></Route>
+//                         <Route exact path='/contact' component={About}></Route>
+//                         <Route exact path='/about' component={Contact}></Route>
+//                     </Switch>
+//                 </div> */}
+//             </Router>
+        
+//         );
+//     }
+//     showContentAbout =(routes)=>{
+//         var result = null;
+//         if(routes.length >0){
+//             result=routes.map((route,index)=>{
+//                 return(
+//                     <Route key={index}
+//                     path={route.path}
+//                     exact={route.exact}
+//                     component={route.main}/>
+//                 );
+//             });
+//         }
+//         return result;
+//     }
+// }
+
+// export default App;
 
