@@ -17,10 +17,10 @@ const SmallItems1 = ({ news }) => {
     </div>
   );
 };
-const CategoryNews1 = ({ categoryTitle, list }) => {
+const CategoryNews1 = ({ list }) => {
   return (
     <div>
-      <h1>{categoryTitle}</h1>
+      <h2>Tài Chính - Kinh doanh</h2>
       <div className="row">
         <div className="col-sm-10">
           <BigItem1 news={list.find((news) => news.type === "Lớn")} />
